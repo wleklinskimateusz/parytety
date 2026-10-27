@@ -251,7 +251,7 @@ function App() {
                   <th scope="col">Parytet M</th>
                   <th scope="col">Parytet K</th>
                   <th scope="col">Parytet X</th>
-                  {isMidTerm && <th scope="col">Do uzupełnienia</th>}
+                  <th scope="col">Do uzupełnienia</th>
                 </tr>
               </thead>
               <tbody>
@@ -260,12 +260,9 @@ function App() {
                     <td>{men}</td>
                     <td>{women}</td>
                     <td>{other}</td>
-                    {isMidTerm && (
-                      <td>
-                        {men - result.existing.men}M {women - result.existing.women}K {" "}
-                        {other - result.existing.other}X
-                      </td>
-                    )}
+                    <td>
+                      {`${men - result.existing.men}M ${women - result.existing.women}K ${other - result.existing.other}X`}
+                    </td>
                   </tr>
                 ))}
               </tbody>

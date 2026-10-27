@@ -10,6 +10,13 @@ pnpm install
 pnpm dev
 ```
 
+## Publikacja w GitHub Pages
+
+Workflow GitHub Actions buduje i publikuje aplikację po każdym pushu do
+brancha `main`. Aby włączyć publikację, w ustawieniach repozytorium wybierz
+**Settings → Pages → Build and deployment → Source → GitHub Actions**.
+Workflow można też uruchomić ręcznie z zakładki **Actions**.
+
 ## Zasady
 
 Dla organu o liczbie miejsc `N`:
